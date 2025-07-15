@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="contact-section py-5">
+  <div class="container">
+    <h1 class="contact-title text-center mb-5">CONTACT US</h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="contact-images d-flex justify-content-center mb-4 gap-4">
+          <div class="contact-img-frame">
+            <img src="/statics/assets/img/profile.png" alt="profile cute" class="contact-img-pic" />
+          </div>
+          <div class="contact-img-frame">
+            <img src="/statics/assets/img/mycat.png" alt="my cat" class="contact-img-pic" />
+          </div>
+        </div>
+        <div class="contact-card p-4 rounded-4 shadow-lg bg-white">
+          <p class="contact-quote text-center mb-4">"ข้อมูลติดต่อฉัน"</p>
+          <ul class="contact-list list-unstyled mb-0">
+            <li class="mb-3 d-flex align-items-center">
+              <a href="https://www.facebook.com/JIRANANBELL2548" target="_blank" class="contact-link d-flex align-items-center">
+                <span class="contact-icon facebook"><i class="fab fa-facebook-f"></i></span>
+                <span class="ms-3">JIRANANBELL2548</span>
+              </a>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <a href="https://www.instagram.com/1bxil__/" target="_blank" class="contact-link d-flex align-items-center">
+                <span class="contact-icon instagram"><i class="fab fa-instagram"></i></span>
+                <span class="ms-3">1bxil__</span>
+              </a>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <a href="https://line.me/ti/p/~1bxil__" target="_blank" class="contact-link d-flex align-items-center">
+                <span class="contact-icon line"><i class="fab fa-line"></i></span>
+                <span class="ms-3">1bxil__</span>
+              </a>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <a href="mailto:jiranankredkla12@gmail.com" class="contact-link d-flex align-items-center">
+                <span class="contact-icon email"><i class="fas fa-envelope"></i></span>
+                <span class="ms-3">jiranankredkla12@gmail.com</span>
+              </a>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <a href="tel:0986040848" class="contact-link d-flex align-items-center">
+                <span class="contact-icon phone"><i class="fas fa-phone-alt"></i></span>
+                <span class="ms-3">098-604-0848</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+.contact-section {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f7fbff 60%, #b3e5fc 100%);
+  min-height: 80vh;
+}
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg,#1976d2,#6ec1e4 60%,#b2ebf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.contact-card {
+  border: none;
+  box-shadow: 0 4px 24px rgba(30,118,210,0.10);
+}
+.contact-quote {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1976d2;
+  background: linear-gradient(90deg,#e3eafc,#f7fbff 80%,#b2ebf2);
+  border-radius: 10px;
+  padding: 18px 20px;
+}
+.contact-list .contact-link {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.13rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.contact-list .contact-link:hover {
+  color: #1976d2;
+}
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #1976d2;
+  transition: background 0.2s, color 0.2s;
+}
+.contact-icon.facebook { background: linear-gradient(135deg,#1976d2,#4267B2); }
+.contact-icon.instagram { background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); }
+.contact-icon.line { background: linear-gradient(135deg,#00c300,#00b900); }
+.contact-icon.email { background: linear-gradient(135deg,#1976d2,#6ec1e4); }
+.contact-icon.phone { background: linear-gradient(135deg,#1976d2,#6ec1e4); }
+.contact-link:hover .contact-icon {
+  background: #fff;
+  color: #1976d2;
+  border: 1.5px solid #1976d2;
+}
+/* ช่องใส่รูปน่ารักๆ */
+.contact-images {
+  gap: 32px;
+}
+.contact-img-frame {
+  background: linear-gradient(135deg, #e3f2fd 60%, #b2ebf2 100%);
+  border-radius: 22px;
+  box-shadow: 0 4px 18px #b2ebf233;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+.contact-img-pic {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 3px solid #1976d2;
+  background: #fff;
+  box-shadow: 0 2px 8px #b2ebf255;
+}
+</style>
+{% endblock %}
