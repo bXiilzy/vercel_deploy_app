@@ -88,12 +88,10 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
 
-# Static files (CSS, JavaScript, Images) - Fixed for Vercel
+# Static files (CSS, JavaScript, Images) - Fixed for VercelSTATIC_URL = 'static/'
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
-STATICFILES_DIRS = [
-    BASE_DIR / 'statics',  # Your static files directory
-]
+STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'statics')]
+STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles_build', 'static')
 
 # Media files
 MEDIA_URL = '/media/'
