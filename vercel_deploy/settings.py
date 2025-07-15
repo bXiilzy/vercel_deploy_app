@@ -89,7 +89,7 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images) - Fixed for Vercel
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
 STATICFILES_DIRS = [
     BASE_DIR / 'statics',  # Your static files directory
