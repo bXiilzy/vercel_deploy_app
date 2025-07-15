@@ -12,15 +12,10 @@ DEBUG = os.environ.get('DEBUG', 'True').lower() == 'true'
 
 # Allowed hosts
 ALLOWED_HOSTS = [
-    'vercel-deploy-app-kappa.vercel.app',
     '.vercel.app',
     'localhost',
     '127.0.0.1',
 ]
-
-# Add this for Vercel
-if os.environ.get('VERCEL'):
-    ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
@@ -48,7 +43,7 @@ ROOT_URLCONF = 'vercel_deploy.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],  # Updated to use BASE_DIR
+        'DIRS': ['templates'],  # Updated to use BASE_DIR
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -65,10 +60,10 @@ WSGI_APPLICATION = 'vercel_deploy.wsgi.application'
 
 # Database - Fixed for Vercel
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/tmp/db.sqlite3',  # Use /tmp for serverless environment
-    }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': '/tmp/db.sqlite3',  # Use /tmp for serverless environment
+    # }
 }
 
 # Password validation
@@ -95,7 +90,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images) - Fixed for Vercel
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
 STATICFILES_DIRS = [
     BASE_DIR / 'statics',  # Your static files directory
 ]
