@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load static %}
+
 
 {% block content %}
 <section class="about-section py-5">
@@ -21,66 +23,66 @@
             <li><i class="fas fa-gamepad me-2"></i> <span>งานอดิเรก: เล่นเกม, ฟังเพลง, ดูหนัง, เล่นแบดมินตัน</span></li>
           </ul>
           <div class="about-activities mt-4">
-            <h4 class="fw-bold mb-3 text-center" style="color:#1976d2;">กิจกรรมที่ฉันชอบ</h4>
-            <div class="row g-4 justify-content-center" style="gap:36px 0;">
+            <h4 class="fw-bold mb-3 text-center" style="color:#1976d2;">กิจกรรมของฉัน</h4>
+            <div class="row g-4 justify-content-center w-100" style="gap:36px 0;">
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center mx-auto" style="max-width:220px; min-height:260px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity1.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">เล่นเกม</div>
+                  <img src="{% static 'activity55.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">ไหว้ครู67</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity2.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">ฟังเพลง</div>
+                  <img src="{% static 'activity54.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">ปีใหม่68</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity3.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">ดูหนัง</div>
+                  <img src="{% static 'activity49.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">sisaket robotics</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity4.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">เล่นแบดมินตัน</div>
+                  <img src="{% static 'activity43.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">ซ้อมรับตรามหาลัย</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity5.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">วาดรูป</div>
+                  <img src="{% static 'activity38.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">ประกวดดาวเดือน</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity6.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">อ่านหนังสือ</div>
+                  <img src="{% static 'activity36.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">วิศวกรสังคม67</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity7.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">ถ่ายรูป</div>
+                  <img src="{% static 'activity33.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">รับน้องคณะ67</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity8.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">ท่องเที่ยว</div>
+                  <img src="{% static 'activity25.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">รับตรามหาลัย67</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity9.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">เลี้ยงแมว</div>
+                  <img src="{% static 'activity06.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">วิศวกรสังคม67</div>
                 </div>
               </div>
               <div class="col-6 col-md-4 col-lg-3">
                 <div class="activity-card p-4 rounded-4 shadow-lg text-center" style="max-width:260px; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
-                  <img src="/statics/assets/img/activity10.jpg"class="activity-img mb-2" style="width:140px;height:140px;" />
-                  <div class="activity-title" style="font-size:1.25rem; margin-top:12px;">ทำอาหาร</div>
+                  <img src="{% static 'activity00.jpg' %}"class="activity-img mb-2" style="width:140px;height:140px;" />
+                  <div class="activity-title" style="font-size:1.00rem; margin-top:12px;">น้องใหม่67</div>
                 </div>
               </div>
             </div>

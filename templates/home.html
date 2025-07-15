@@ -1,17 +1,17 @@
 {% extends "base.html" %}
-
+{% load static %}
 
 {% block content %}
 <div class="cute-container">
     <div class="profile-card big-card">
         <div class="profile-img-wrap">
-            <img src="/statics/assets/img/profile.png" alt="รูปโปรไฟล์" class="profile-img" />
+            <img src="{% static 'bxilzyy07.jpg' %}" alt="รูปโปรไฟล์" class="profile-img" />
         </div>
         <h2 class="cute-title">สวัสดีค่ะ ฉันชื่อ <span style="color:#ff7eb9">[ใส่ชื่อคุณ]</span></h2>
         <p class="cute-desc">นักศึกษาวิทยาการคอมพิวเตอร์<br>มหาวิทยาลัยราชภัฏศรีสะเกษ<br>ชั้นปีที่ 2</p>
         <div class="cute-hobby-row">
             <div class="cute-hobby-card">
-                <img src="/statics/assets/img/mycat.png" alt="แมวของฉัน" class="hobby-img" />
+                <img src="{% static 'c6.jpg' %}" alt="แมวของฉัน" class="hobby-img" />
                 <div class="hobby-title">แมวของฉัน</div>
                 <div class="hobby-desc">รักมากที่สุด 🐾</div>
             </div>
@@ -119,7 +119,7 @@
         <div class="col-md-4 col-12">
             <div class="card h-100 border-0 shadow-sm bg-blue-card d-flex align-items-center justify-content-center">
                 <div class="card-body text-center">
-                    <img src="/statics/assets/img/mycat.png" alt="แมวของฉัน" style="width:80px;height:80px;border-radius:50%;border:3px solid #ffd6e0;margin-bottom:10px;">
+                    <img src="{% static 'c12.jpg' %}" alt="แมวของฉัน" style="width:80px;height:80px;border-radius:50%;border:3px solid #ffd6e0;margin-bottom:10px;">
                     <h5 class="card-title mb-2">แมวของฉัน</h5>
                     <p class="card-text text-blue fw-bold">รักมากที่สุด 🐾</p>
                 </div>
